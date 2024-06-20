@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+/* SECCION INICIO */
+
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./assets/imagenes/Inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #FF00E6;
+    /* color: #0afff5; */
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #FF00E6;
+    text-shadow: 0 0 10px #FF00E6;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: rgba(255, 255, 255, 0.603);
+    text-shadow: 0 0 10px #FF00E6;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 40px;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 0 0 10px #FF00E6;
+}
+
+#inicio .contenido .presentacion h3 {
+    font-size: 33px;
+    text-shadow: 0 0 10px #0afff5;
+    margin-bottom: 20px;
+}
+
+/* TARJETA IR A PORTFOLIO */
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 1px solid white;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    color: white;
+    background: #FF00E6;
+    box-shadow: 0 0 10px #FF00E6, 0 0 40px #FF00E6, 0 0 80px #FF00E6;
+    transition-delay: .1s;
+    border: 1px solid #FF00E6;
+}
+
+/* SECCION SOBREMI */
+
+#sobremi {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./assets/imagenes/sobremi2\ \(2\).jpg);
+    border-top: 2px solid #0afff727;
+}
