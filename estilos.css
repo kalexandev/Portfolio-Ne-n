@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -91,24 +92,164 @@
     justify-content: center;
 }
 
-#inicio .contenido .presentacion .bienvenida {
-    font-size: 40px;
-    margin-bottom: 90px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+/* ANIMACION WELCOME */
+
+#inicio .contenido .presentacion .welcome {
+    margin-bottom: 120px;
+    text-align: center;
+    animation: border-flicker 2s linear infinite;
 }
 
+#inicio .contenido .presentacion .welcome h1 {
+    color: white;
+    font-size: 53px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: text-flicker 3s linear infinite;
+}
+
+#offset {
+    animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgba(10, 255, 245, 1);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgb(10, 255, 245, 1)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1)
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1)
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgba(10, 255, 245, 1)
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1)
+    }
+  }
+
+  @keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(10, 255, 245, 1);
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(10, 255, 245, 1);
+    }
+  }
+
 #inicio .contenido .presentacion h2 {
-    font-size: 55px;
-    margin-bottom: 25px;
+    font-size: 44px;
     text-align: center;
+    margin-bottom: 20px;
     text-shadow: 0 0 10px #FF00E6;
 }
 
+/* ANIMACION H3 */
+
 #inicio .contenido .presentacion h3 {
-    font-size: 33px;
-    text-shadow: 0 0 10px #0afff5;
-    margin-bottom: 20px;
+    text-transfrom: uppercase;
+    color:white;
+    margin-top: 20px;
+    font-size:3em;
+    text-align:center;
+    animation: neonGlow 2s infinite alternate;
+    -webkit-animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+      text-shadow: 0 0 10px rgba(255,255,255,.8),
+                   0 0 20px rgba(255,255,255,.8),
+                   0 0 22px  rgba(255,255,255,.8),
+                   0 0 40px  rgba(66,220,219,.8),
+                   0 0 60px  rgba(66,220,219,.8),
+                   0 0 80px  rgba(66,220,219,.5),
+                   0 0 100px rgba(66,220,219,.5),
+                   0 0 140px rgba(66,220,219,.5),
+                   0 0 200px rgba(66,220,219,.5);
+    }
+    100% {
+      text-shadow: 0 0 2px rgba(255,255,255,.8),
+                   0 0 8px rgba(255,255,255,.8),
+                   0 0 10px rgba(255,255,255,.8),
+                   0 0 20px rgba(66,220,219,.8),
+                   0 0 30px rgba(66,220,219,.8),
+                   0 0 40px rgba(66,220,219,.8),
+                   0 0 50px rgba(66,220,219,.5),
+                   0 0 80px rgba(66,220,219,.5);
+    }
 }
 
 /* TARJETA IR A PORTFOLIO */
@@ -116,11 +257,11 @@
 #inicio .contenido .presentacion a {
     text-decoration: none;
     color: white;
-    margin: 40px;
+    border: 1px solid white;
+    margin-top: 70px;
     padding: 20px 25px;
     text-transform: uppercase;
     overflow: hidden;
-    border: 1px solid white;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -131,14 +272,106 @@
 #inicio .contenido .presentacion a:hover {
     color: white;
     background: #FF00E6;
+    border: 1px solid #FF00E6;
     box-shadow: 0 0 10px #FF00E6, 0 0 40px #FF00E6, 0 0 80px #FF00E6;
     transition-delay: .1s;
-    border: 1px solid #FF00E6;
 }
 
 /* SECCION SOBREMI */
 
 #sobremi {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./assets/imagenes/sobremi2\ \(2\).jpg);
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./assets/imagenes/sobremi2\ \(2\).jpg);
     border-top: 2px solid #0afff727;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobremi .sobremi {
+    margin: 40 40px;
+    background: linear-gradient(rgba(255,0,230,.1), rgba(10,255,245,.1));
+    height: 80vh;
+    width: 120vh;
+    padding: 113px 121px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 10px #0afff5;
+    text-align: center;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#sobremi .sobremi p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin-top: 80px;
+    margin-left: 350px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #0afff5;
+    color: white;
+    border: 1px solid #0afff5;
+    box-shadow: 0 0 10px #0afff5, 0 0 40px #0afff5, 0 0 80px #0afff5;
+}
+
+/* SECCION PORTFOLIO */
+
+#portfolio {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./assets/imagenes/proyecto4.jpg);
+    border-top: 2px solid #0afff727;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#portfolio .container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
